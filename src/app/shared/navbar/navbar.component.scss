@@ -24,6 +24,26 @@
   object-fit: cover;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link,
+.nav-link:focus {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 0px 1em;
+  transition: font-weight 0.3s linear;
+}
+
+.active {
+  font-weight: bold;
+}
+
 .socials {
   height: 4em;
   display: flex;

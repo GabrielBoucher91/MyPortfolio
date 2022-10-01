@@ -8,9 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavbarComponent implements OnInit {
   @Input() about = 'About';
   @Input() projects = 'Projects';
-  @Input() Research = 'Research';
-  @Input() Work = 'Work Experience';
-  @Input() Contact = 'Contact';
+  @Input() research = 'Research';
+  @Input() work = 'Work Experience';
+  @Input() contact = 'Contact';
 
   constructor() {}
 

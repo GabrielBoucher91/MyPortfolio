@@ -2,9 +2,29 @@
   <div class="logo">
     <img class="myphoto" src="assets/photo/Me.jpg" alt="Photo of me" />
   </div>
-  <div class="navigation">Stuff</div>
+  <div class="navigation">
+    <a
+      class="nav-link"
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >{{ about }}</a
+    >
+    <a class="nav-link" routerLink="research" routerLinkActive="active">{{
+      research
+    }}</a>
+    <a class="nav-link" routerLink="projects" routerLinkActive="active">{{
+      projects
+    }}</a>
+    <a class="nav-link" routerLink="work" routerLinkActive="active">{{
+      work
+    }}</a>
+  </div>
   <div class="socials">
-    <a class="social-link" href=""
+    <a
+      class="social-link"
+      href="https://github.com/GabrielBoucher91/"
+      target="_blank"
       ><img
         src="assets/logos/GitHub-Mark-Light-64px.png"
         class="social-logo"
