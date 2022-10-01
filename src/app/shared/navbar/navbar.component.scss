@@ -1,0 +1,40 @@
+// Desktop styles
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  background-color: red;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.myphoto {
+  height: 4em;
+  width: 4em;
+  border-radius: 2em;
+  object-fit: cover;
+}
+
+.socials {
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  margin: 0px 1em;
+}
+
+.social-logo {
+  height: 2em;
+}
