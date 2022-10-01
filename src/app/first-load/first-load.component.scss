@@ -1,0 +1,38 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightblue;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  background-color: red;
+  border-radius: 2em;
+  animation-name: test;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.21, 0.51, 0, 1.49);
+
+  h1 {
+    font-size: 3em;
+    font-family: "Silkscreen", cursive;
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}

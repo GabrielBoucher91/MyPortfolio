@@ -1,1 +1,6 @@
+<app-first-load
+  (over)="loadingScreen = false"
+  *ngIf="loadingScreen"
+  @loading
+></app-first-load>
 <router-outlet></router-outlet>
