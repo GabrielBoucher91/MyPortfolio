@@ -7,9 +7,10 @@ import { SharedModule } from '../shared/shared.module';
 import { ProjectsEnglishComponent } from './projects-english/projects-english.component';
 import { ResearchEnglishComponent } from './research-english/research-english.component';
 import { WorkEnglishComponent } from './work-english/work-english.component';
+import { AboutEnglishComponent } from './about-english/about-english.component';
 
 @NgModule({
-  declarations: [EnglishHomeComponent, ProjectsEnglishComponent, ResearchEnglishComponent, WorkEnglishComponent],
+  declarations: [EnglishHomeComponent, ProjectsEnglishComponent, ResearchEnglishComponent, WorkEnglishComponent, AboutEnglishComponent],
   imports: [CommonModule, EnglishRoutingModule, SharedModule],
 })
 export class EnglishModule {}

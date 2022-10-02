@@ -1,0 +1,13 @@
+// Desktop view
+
+:host {
+  width: 55%;
+  min-height: 8rem;
+  padding: 1em;
+  background-color: red;
+  border-radius: 1rem;
+}
+.title {
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}

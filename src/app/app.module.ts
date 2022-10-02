@@ -4,11 +4,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutEnglishComponent } from './about-english/about-english.component';
 import { FirstLoadComponent } from './first-load/first-load.component';
 
 @NgModule({
-  declarations: [AppComponent, AboutEnglishComponent, FirstLoadComponent],
+  declarations: [AppComponent, FirstLoadComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],

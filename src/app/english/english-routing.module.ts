@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutEnglishComponent } from '../about-english/about-english.component';
+import { AboutEnglishComponent } from './about-english/about-english.component';
 import { EnglishHomeComponent } from './english-home/english-home.component';
 import { ProjectsEnglishComponent } from './projects-english/projects-english.component';
 import { ResearchEnglishComponent } from './research-english/research-english.component';
