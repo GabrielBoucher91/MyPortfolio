@@ -20,12 +20,24 @@ main {
 }
 
 .title {
+  width: fit-content;
   font-size: 3.2rem;
   font-weight: 800;
-  color: whitesmoke;
+  color: var(--bg-light);
   margin-top: 3rem;
   margin-bottom: 4rem;
-  text-decoration: underline;
+  border-bottom: 5px solid var(--primary-purple);
+  animation: top 1s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes top {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
 }
 
 .left {
@@ -34,7 +46,7 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 3rem;
-  animation: left 1s ease-out 0.2s;
+  animation: left 1s ease-out 0.5s;
   animation-fill-mode: both;
 }
 
@@ -53,7 +65,7 @@ main {
   flex-direction: row;
   justify-content: flex-end;
   margin-bottom: 3rem;
-  animation: right 1s ease-out 0.2s;
+  animation: right 1s ease-out 0.5s;
   animation-fill-mode: both;
 }
 
