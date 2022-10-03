@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 5em;
-  background-color: red;
+  background-color: var(--bg-light);
 }
 
 .logo {
@@ -22,6 +22,7 @@
   width: 4em;
   border-radius: 2em;
   object-fit: cover;
+  border: 2px solid var(--primary-purple);
 }
 
 .navigation {
@@ -31,17 +32,27 @@
   align-items: center;
 }
 
-.nav-link,
-.nav-link:focus {
-  color: white;
+.nav-link {
+  color: var(--bg-dark);
   text-decoration: none;
   font-size: 1.3em;
   margin: 0px 1em;
   transition: font-weight 0.3s linear;
+  transition: all 0.3s ease-out;
+}
+
+.nav-link:focus {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--primary-blue);
+  transform: translateY(-0.15em);
 }
 
 .active {
   font-weight: bold;
+  border-bottom: 3px solid var(--primary-purple);
 }
 
 .socials {
@@ -52,9 +63,23 @@
 }
 
 .social-link {
+  height: 3.5em;
+  width: 3.5em;
   margin: 0px 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  transition: all 0.5s ease-out;
+}
+
+.social-link:hover {
+  background-color: var(--primary-blue);
+  transform: translateY(-0.2em);
+  box-shadow: 0em 0em 0.5em 0.2em var(--bg-dark);
 }
 
 .social-logo {
   height: 2em;
+  filter: invert(100%) opacity(70%);
 }
