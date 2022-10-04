@@ -1,2 +1,5 @@
 <h1 class="title"><ng-content select="[title]"></ng-content></h1>
 <p class="content"><ng-content select="[content]"></ng-content></p>
+<div *ngFor="let link of links" class="linkholder">
+  <a class="link" [routerLink]="link.url">{{ link.caption }} &#62;</a>
+</div>

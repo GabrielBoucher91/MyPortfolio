@@ -36,4 +36,29 @@
   color: var(--bg-dark);
   font-size: 1.2em;
   font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.linkholder {
+  margin-bottom: 0.8em;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: var(--primary-purple);
+  background: linear-gradient(
+      to right,
+      var(--primary-blue) 50%,
+      transparent 50%
+    )
+    right;
+  background-size: 210% 100%;
+  transition: all 1.3s cubic-bezier(0.26, 0.71, 0.23, 1);
+  padding: 0em 0.3em;
+  border-radius: 2em;
+}
+
+.link:hover {
+  background-position: left;
 }

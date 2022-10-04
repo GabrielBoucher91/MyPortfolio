@@ -2,7 +2,7 @@
   <div class="background"></div>
   <h1 class="title">Web Dev, Robotics, and Other Cool Stuff!</h1>
   <div class="left">
-    <app-about-card>
+    <app-about-card [links]="webLink">
       <div title>Web Development</div>
       <div content>
         I am a self-taught and very motivated web developer. I am proficient
@@ -14,7 +14,7 @@
     </app-about-card>
   </div>
   <div class="right">
-    <app-about-card>
+    <app-about-card [links]="roboticsLink">
       <div title>Robotics</div>
       <div content>
         My background is in robotics. I have a masters degree in robotics and
