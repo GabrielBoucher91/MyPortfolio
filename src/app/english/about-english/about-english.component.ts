@@ -11,6 +11,8 @@ export class AboutEnglishComponent implements OnInit {
     { url: '/research', caption: 'Got to research' },
     { url: '/work', caption: 'Got to work experience' },
   ];
+  researchLink = [{ url: '/research', caption: 'Got to research' }];
+  workLink = [{ url: '/work', caption: 'Got to work experience' }];
 
   constructor() {}
 

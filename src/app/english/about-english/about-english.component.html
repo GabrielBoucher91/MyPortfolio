@@ -26,9 +26,30 @@
     </app-about-card>
   </div>
   <div class="left">
-    <app-about-card>
-      <div title>Research and AI</div>
-      <div content>Research and AI stuff</div>
+    <app-about-card [links]="researchLink">
+      <div title>Research, School Projects, and More</div>
+      <div content>
+        During my part of my undergraduate studies and my masters, I had the
+        chance to work at my university’s robotics lab. My specialty is control,
+        kinematics, and dynamics of serial and parallel manipulators. I was also
+        part of our Formula SAE team and worked on both the combustion and
+        electric vehicle, building parts that are still in use to this day!
+        Visit my research section to access my articles, dissertation and an
+        overview of various school projects.
+      </div>
+    </app-about-card>
+  </div>
+  <div class="right">
+    <app-about-card [links]="workLink">
+      <div title>Work Experience</div>
+      <div content>
+        During my career I have worked with both collaborative and industrial
+        robots. I touched to many of the different parts of a product's life
+        cycle, from the initial ideation to the launch to market. I’ve also
+        worked closely with customers as an application engineer, working hard
+        to help them achieve their goal. For more details on my work experience,
+        visit my work section!
+      </div>
     </app-about-card>
   </div>
 </main>
