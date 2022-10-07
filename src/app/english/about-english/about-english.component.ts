@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AboutEnglishComponent implements OnInit {
   webLink = [{ url: '/projects', caption: 'Go to projects' }];
   roboticsLink = [
-    { url: '/research', caption: 'Got to research' },
-    { url: '/work', caption: 'Got to work experience' },
+    { url: '/research', caption: 'Go to research' },
+    { url: '/work', caption: 'Go to work experience' },
   ];
-  researchLink = [{ url: '/research', caption: 'Got to research' }];
-  workLink = [{ url: '/work', caption: 'Got to work experience' }];
+  researchLink = [{ url: '/research', caption: 'Go to research' }];
+  workLink = [{ url: '/work', caption: 'Go to work experience' }];
 
   constructor() {}
 

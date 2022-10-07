@@ -8,6 +8,6 @@ import { SkillPanelComponent } from './skill-panel/skill-panel.component';
 @NgModule({
   declarations: [NavbarComponent, AboutCardComponent, SkillPanelComponent],
   imports: [CommonModule, RouterModule],
-  exports: [NavbarComponent, AboutCardComponent],
+  exports: [NavbarComponent, AboutCardComponent, SkillPanelComponent],
 })
 export class SharedModule {}

@@ -12,15 +12,9 @@
 }
 
 :host:hover {
-  transform: translateY(-0.6rem);
-  box-shadow: 0px 1rem 10px 0px var(--primary-blue);
+  //transform: translateY(-0.6rem);
+  //box-shadow: 0px 1rem 10px 0px var(--primary-blue);
   background-color: var(--bg-light);
-  .title {
-    color: var(--bg-dark);
-  }
-  .content {
-    color: var(--bg-dark);
-  }
 }
 
 .title {

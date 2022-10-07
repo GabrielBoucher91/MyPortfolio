@@ -3,13 +3,17 @@ main {
   position: relative;
   background-color: rgb(113, 113, 113);
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .background {
   content: "";
   background-image: url("/assets/photo/Background.jpg");
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   left: 0;
   top: 0;
@@ -29,6 +33,7 @@ main {
   border-bottom: 5px solid var(--primary-purple);
   animation: top 1s ease-out;
   animation-fill-mode: both;
+  align-self: flex-start;
 }
 
 @keyframes top {
