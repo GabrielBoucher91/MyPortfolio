@@ -161,6 +161,53 @@ table {
   background: var(--primary-blue);
 }
 
+// Shared Styles
+
+.main-content {
+  padding: 3em;
+  position: relative;
+  background-color: var(--bg-dark);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectiontitle {
+  width: fit-content;
+  font-size: 3.2em;
+  font-weight: 800;
+  color: var(--bg-light);
+  // margin-top: 1em;
+  margin-bottom: 0.7em;
+  border-bottom: 5px solid var(--primary-purple);
+  animation: titletop 1s ease-out;
+  animation-fill-mode: both;
+  align-self: flex-start;
+}
+
+@keyframes titletop {
+  from {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
+.sectionsubtitle {
+  width: fit-content;
+  align-self: flex-start;
+  color: var(--bg-light);
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 3px solid var(--primary-blue);
+  margin-bottom: 0.4em;
+}
+
 @media screen and (max-width: 900px) {
   body {
     font-size: 0.8rem;
