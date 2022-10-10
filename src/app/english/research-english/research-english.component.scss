@@ -46,8 +46,8 @@
 }
 
 .image-slide-anim {
-  animation: images-slide 1s ease-out;
-  animation-fill-mode: both;
+  animation: images-slide 0.75s ease-out;
+  animation-fill-mode: backwards;
 }
 
 @keyframes images-slide {
