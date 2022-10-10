@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AboutCardComponent } from './about-card/about-card.component';
 import { SkillPanelComponent } from './skill-panel/skill-panel.component';
 import { UsefulLinksComponent } from './useful-links/useful-links.component';
+import { WorkCardComponent } from './work-card/work-card.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { UsefulLinksComponent } from './useful-links/useful-links.component';
     AboutCardComponent,
     SkillPanelComponent,
     UsefulLinksComponent,
+    WorkCardComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -19,6 +21,7 @@ import { UsefulLinksComponent } from './useful-links/useful-links.component';
     AboutCardComponent,
     SkillPanelComponent,
     UsefulLinksComponent,
+    WorkCardComponent,
   ],
 })
 export class SharedModule {}
