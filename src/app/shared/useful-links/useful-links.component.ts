@@ -11,6 +11,7 @@ export class UsefulLinksComponent implements OnInit {
   logos = {
     Article: 'assets/logos/links/article.png',
     Video: 'assets/logos/links/video.png',
+    Page: 'assets/logos/links/page.png',
   };
 
   constructor() {}

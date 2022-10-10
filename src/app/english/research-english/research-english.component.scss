@@ -30,6 +30,7 @@
   color: var(--bg-light);
   margin-top: 1em;
   margin-bottom: 2em;
+  animation: fade-in 1s ease-out;
 }
 
 .useful-links {
@@ -44,6 +45,20 @@
   align-items: center;
 }
 
+.image-slide-anim {
+  animation: images-slide 1s ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes images-slide {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+
 .project-image {
   display: inline-block;
   object-fit: contain;
@@ -55,4 +70,13 @@
 
 .project-image:hover {
   height: 26em;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
