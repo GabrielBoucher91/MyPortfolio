@@ -99,6 +99,8 @@ video {
   font: inherit;
   vertical-align: baseline;
   font-family: "Source Code Pro", monospace;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,

@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-useful-links',
   templateUrl: './useful-links.component.html',
-  styleUrls: ['./useful-links.component.scss']
+  styleUrls: ['./useful-links.component.scss'],
 })
 export class UsefulLinksComponent implements OnInit {
+  @Input() type: string;
+  @Input() link: string;
+  logos = {
+    Article: 'assets/logos/links/article.png',
+    Video: 'assets/logos/links/video.png',
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
