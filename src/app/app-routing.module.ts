@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('./english/english.module').then((m) => m.EnglishModule),
+    redirectTo: 'EN',
+    pathMatch: 'full',
   },
   {
     path: 'EN',

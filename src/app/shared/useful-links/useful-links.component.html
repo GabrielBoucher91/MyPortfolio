@@ -1,0 +1,9 @@
+<a [href]="link" target="_blank">
+  <div class="link-header">
+    <h3 class="link-title">{{ type }}</h3>
+    <img [src]="logos[type]" alt="" class="link-logo" />
+  </div>
+  <div class="link-content">
+    <p class="link-description"><ng-content></ng-content></p>
+  </div>
+</a>
