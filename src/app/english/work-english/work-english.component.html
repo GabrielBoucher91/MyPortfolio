@@ -1,16 +1,69 @@
 <main class="main-content">
+  <h1 class="sectiontitle">Work Experience</h1>
   <section>
-    <h1 class="sectiontitle">Work Experience</h1>
     <h2 class="sectionsubtitle">Industry Experience</h2>
     <div class="work-cards">
-      <app-work-card></app-work-card>
-      <app-work-card></app-work-card>
-      <app-work-card></app-work-card>
+      <app-work-card
+        title="Robotics Expert"
+        company="Robotiq"
+        startDate="Jan 2019"
+        endDate="Feb 2020"
+        class="animated-left"
+        [ngStyle]="{ 'animation-delay': calcDelay(1) }"
+      >
+        As a robotics expert at Robotiq, my job was to bridge the gap between
+        sales, engineering, and support. I had to make sure the documentation
+        was up to date and support the sales and support teams when more
+        advanced support was required. I also had to write articles and videos
+        on how the products work</app-work-card
+      >
+      <app-work-card
+        title="Application Expert"
+        company="Robotiq"
+        startDate="Feb 2020"
+        endDate="May 2021"
+        class="animated-left"
+        [ngStyle]="{ 'animation-delay': calcDelay(2) }"
+      >
+        As an application expert, my job was to help the product owners take an
+        idea from concept to market. I would design prototypes, help the
+        development teams with conception and validation, train the sales and
+        support team on the new products, and create documentation and videos
+        for the customers and partners.
+      </app-work-card>
+      <app-work-card
+        title="Application Specialist"
+        company="Mecadmic Industrial Robotics"
+        startDate="Jun 2021"
+        endDate="Present"
+        class="animated-left"
+        [ngStyle]="{ 'animation-delay': calcDelay(3) }"
+      >
+        As an application specialist, my job is to help our partner and customer
+        integrate our robot in their system. I specialize in the software side
+        of implementation, mainly with Python. I support our Python API and help
+        customers use it. I also create content like software examples and demos
+        for trade shows and customers.
+      </app-work-card>
     </div>
   </section>
   <hr class="hr" />
   <section>
     <h2 class="sectionsubtitle">School Experience</h2>
-    <app-work-card></app-work-card>
+    <div class="work-cards">
+      <app-work-card
+        title="Research Auxiliary"
+        company="University Laval's Robotics Lab"
+        startDate="May 2015"
+        endDate="Feb 2020"
+        class="animated-left"
+        [ngStyle]="{ 'animation-delay': calcDelay(4) }"
+      >
+        During my schooling I worked on a few different projects, mainly a small
+        mobile robot that could skate on ice. It was programmed on a DSP in C. I
+        also worked 2 years on a collaborative robot for my Masters project
+        which was controlled using MATLAB and Simulink Real Time.
+      </app-work-card>
+    </div>
   </section>
 </main>

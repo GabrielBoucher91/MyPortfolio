@@ -1,11 +1,8 @@
-<h1 class="work-title">Robotics Expert</h1>
-<p class="content"><span class="underline">Company:</span>Robotiq</p>
+<h1 class="work-title">{{ title }}</h1>
+<p class="content"><span class="underline">Company:</span>{{ company }}</p>
 <p class="content">
-  <span class="underline">Duration:</span>Jan 2019 - Feb 2020
+  <span class="underline">Duration:</span>{{ startDate }} - {{ endDate }}
 </p>
 <p class="description">
-  As a robotics expert at Robotiq, my job was to bridge the gap between sales,
-  engineering, and support. I had to make sure the documentation was up to date
-  and support the sales and support teams when more advanced support was
-  required. I also had to write articles and videos on how the products work.
+  <ng-content></ng-content>
 </p>
