@@ -16,6 +16,9 @@
 :host:hover {
   background-color: var(--bg-light);
   border: 3px solid var(--primary-blue);
+  .skills {
+    background-color: var(--bg-dark);
+  }
 }
 
 .work-title {
@@ -23,8 +26,6 @@
   margin-bottom: 0.3em;
   border-bottom: 2px solid var(--primary-purple);
 }
-
-
 
 .content {
   font-size: 1.2em;
@@ -35,4 +36,24 @@
   text-decoration: underline;
   text-decoration-color: var(--primary-purple);
   margin-right: 0.5em;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 0.3em;
+}
+
+.skills {
+  color: var(--bg-light);
+  background-color: var(--bg-dark-translucid);
+  padding: 1em;
+  border-radius: 0.6em;
+  align-self: flex-end;
+  margin-top: 1em;
+  transition: all 0.4s ease-out;
+  ul {
+    font-size: 0.8em;
+    list-style-type: circle;
+    list-style-position: inside;
+  }
 }
