@@ -1,0 +1,24 @@
+.hr {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.animated-left {
+  animation: slide-in-left 1s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-70vw);
+  }
+  to {
+    transform: translateX(0vh);
+  }
+}
