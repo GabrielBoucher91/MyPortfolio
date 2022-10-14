@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   background-color: var(--bg-light-translucid);
-  color: var(--bg-dark);
+  color: var(--text-dark);
   padding: 1em;
   margin-bottom: 1.5em;
   border-radius: 1em;
@@ -23,6 +23,7 @@
 
 .work-title {
   font-size: 2em;
+  font-weight: 700;
   margin-bottom: 0.3em;
   border-bottom: 2px solid var(--primary-purple);
 }
@@ -36,6 +37,7 @@
   text-decoration: underline;
   text-decoration-color: var(--primary-purple);
   margin-right: 0.5em;
+  font-weight: 600;
 }
 
 h2 {
