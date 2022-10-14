@@ -12,6 +12,7 @@ export class ProjectCardComponent implements OnInit {
   techLinks = {
     Angular: 'assets/logos/skills/angular.png',
     Github: 'assets/logos/skills/GitHub-Mark-64px.png',
+    Firebase: 'assets/logos/skills/Firebase_Logo_Logomark.png',
   };
 
   constructor() {}
