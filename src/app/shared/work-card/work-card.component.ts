@@ -10,6 +10,7 @@ export class WorkCardComponent implements OnInit {
   @Input() company: string;
   @Input() startDate: string;
   @Input() endDate: string;
+  @Input() skills: string[];
 
   constructor() {}
 
