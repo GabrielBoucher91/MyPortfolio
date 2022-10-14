@@ -7,6 +7,10 @@ a {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: var(--bg-light);
   width: 22em;
   height: 25em;
@@ -27,14 +31,59 @@ a {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 0em 1em;
   color: var(--bg-dark);
 }
 
 h1 {
   font-size: 1.2em;
+  font-weight: 600;
   color: var(--text-dark);
   border-bottom: 2px solid var(--primary-purple);
   margin-bottom: 0.8em;
   width: fit-content;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+
+  button {
+    font-size: 1em;
+    font-weight: 600;
+    height: 2.3em;
+    margin-right: 0.5em;
+    padding: 0em 1em;
+    color: var(--bg-light);
+    background-color: var(--bg-dark-translucid);
+    border: none;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-out;
+  }
+
+  button:hover {
+    background-color: var(--bg-dark);
+  }
+}
+
+.tech-badges {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.tech-badge {
+  height: 2em;
+  margin: 0em 0.2em;
 }

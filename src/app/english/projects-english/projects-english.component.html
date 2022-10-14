@@ -1,6 +1,15 @@
 <main class="main-content">
   <h1 class="sectiontitle">Projects</h1>
   <div class="project-cards-holder">
-    <app-project-card></app-project-card>
+    <app-project-card
+      [techs]="['Angular', 'Github']"
+      linkToDetail="portfolio"
+      linkToSource="https://github.com/GabrielBoucher91/MyPortfolio"
+    >
+      <div title>Portfolio Website</div>
+      <div content>
+        This project is my portfolio website which you are currently viewing.
+      </div>
+    </app-project-card>
   </div>
 </main>

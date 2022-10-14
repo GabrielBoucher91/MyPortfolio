@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.scss']
+  styleUrls: ['./project-card.component.scss'],
 })
 export class ProjectCardComponent implements OnInit {
+  @Input() linkToDetail: string;
+  @Input() linkToSource: string;
+  @Input() techs: string[];
+  techLinks = {
+    Angular: 'assets/logos/skills/angular.png',
+    Github: 'assets/logos/skills/GitHub-Mark-64px.png',
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
