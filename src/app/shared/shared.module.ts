@@ -7,6 +7,7 @@ import { SkillPanelComponent } from './skill-panel/skill-panel.component';
 import { UsefulLinksComponent } from './useful-links/useful-links.component';
 import { WorkCardComponent } from './work-card/work-card.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import { TechCardComponent } from './tech-card/tech-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     UsefulLinksComponent,
     WorkCardComponent,
     ProjectCardComponent,
+    TechCardComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -25,6 +27,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     UsefulLinksComponent,
     WorkCardComponent,
     ProjectCardComponent,
+    TechCardComponent,
   ],
 })
 export class SharedModule {}
