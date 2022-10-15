@@ -1,16 +1,29 @@
-<a href=""
-  ><div class="card">
-    <img
-      src="assets\projects-thumbnails\WebsiteThumbnail.png"
-      alt="Image representing the project"
-      class="project-thumbnail"
-    />
-    <div class="content">
-      <h1>Portfolio Website</h1>
-      <p>
-        This project is my portfolio website which you are currently viewing.
-      </p>
-      <div class="tech-badges"></div>
+<div class="card">
+  <img
+    src="assets\projects-thumbnails\WebsiteThumbnail.png"
+    alt="Image representing the project"
+    class="project-thumbnail"
+  />
+  <div class="content">
+    <h1><ng-content select="[title]"></ng-content></h1>
+    <p><ng-content select="[content]"></ng-content></p>
+  </div>
+  <div class="footer">
+    <div class="buttons">
+      <a [routerLink]="linkToDetail">
+        <button>Details</button>
+      </a>
+      <a [href]="linkToSource" target="_blank">
+        <button>Source</button>
+      </a>
+    </div>
+    <div class="tech-badges">
+      <img
+        *ngFor="let tech of techs"
+        [src]="techLinks[tech]"
+        alt=""
+        class="tech-badge"
+      />
     </div>
   </div>
-</a>
+</div>

@@ -8,9 +8,10 @@ import { ProjectsEnglishComponent } from './projects-english/projects-english.co
 import { ResearchEnglishComponent } from './research-english/research-english.component';
 import { WorkEnglishComponent } from './work-english/work-english.component';
 import { AboutEnglishComponent } from './about-english/about-english.component';
+import { ProjectPortfolioComponent } from './project-portfolio/project-portfolio.component';
 
 @NgModule({
-  declarations: [EnglishHomeComponent, ProjectsEnglishComponent, ResearchEnglishComponent, WorkEnglishComponent, AboutEnglishComponent],
+  declarations: [EnglishHomeComponent, ProjectsEnglishComponent, ResearchEnglishComponent, WorkEnglishComponent, AboutEnglishComponent, ProjectPortfolioComponent],
   imports: [CommonModule, EnglishRoutingModule, SharedModule],
 })
 export class EnglishModule {}
