@@ -48,6 +48,19 @@ h1 {
   padding: 0.3em 0.4rem;
   min-width: 0;
 
+  .labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .danger {
+    color: red;
+    font-size: 0.7em;
+    margin-left: 1em;
+  }
+
   label {
     font-weight: 600;
     margin-bottom: 0.2em;
@@ -89,4 +102,14 @@ h1 {
 .send-button:hover {
   background-color: var(--primary-blue);
   color: var(--primary-purple);
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  background-color: grey;
+  color: darkgray;
+}
+
+.send-button:disabled:hover {
+  cursor: default;
 }
