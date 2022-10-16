@@ -1,0 +1,17 @@
+<button (click)="onShowForm()">Contact Me</button>
+<app-modal *ngIf="showForm" (close)="showForm = false">
+  <form [formGroup]="contactForm">
+    <div>
+      <label for="">Name</label>
+      <input formControlName="name" />
+    </div>
+    <div>
+      <label for="">Email</label>
+      <input type="email" formControlName="email" />
+    </div>
+    <div>
+      <label for="">Subject</label>
+      <input type="text" formControlName="subject" />
+    </div>
+  </form>
+</app-modal>

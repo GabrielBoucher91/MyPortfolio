@@ -1,0 +1,23 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-dark-translucid);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50%;
+  background-color: var(--bg-light);
+  padding: 2em;
+  border-radius: 2em;
+}
