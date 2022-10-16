@@ -1,17 +1,31 @@
-<button (click)="onShowForm()">Contact Me</button>
+<button class="button" (click)="onShowForm()">Contact Me</button>
 <app-modal *ngIf="showForm" (close)="showForm = false">
-  <form [formGroup]="contactForm">
-    <div>
-      <label for="">Name</label>
-      <input formControlName="name" />
+  <h1>Send me a message!</h1>
+  <form class="form" [formGroup]="contactForm">
+    <div class="name-email">
+      <div class="input">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name" />
+      </div>
+      <div class="input">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" />
+      </div>
     </div>
-    <div>
-      <label for="">Email</label>
-      <input type="email" formControlName="email" />
+    <div class="input">
+      <label for="subject">Subject</label>
+      <input id="subject" type="text" formControlName="subject" />
     </div>
-    <div>
-      <label for="">Subject</label>
-      <input type="text" formControlName="subject" />
+    <div class="input">
+      <label for="message">Message</label>
+      <textarea
+        name=""
+        id="message"
+        cols="30"
+        rows="10"
+        formControlName="message"
+      ></textarea>
     </div>
+    <button class="send-button">Send</button>
   </form>
 </app-modal>
