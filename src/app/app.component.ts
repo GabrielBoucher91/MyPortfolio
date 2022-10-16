@@ -8,6 +8,9 @@ import {
   // ...
 } from '@angular/animations';
 
+import { RouterOutlet } from '@angular/router';
+import { fader } from './route-animations';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,8 +25,17 @@ import {
         ),
       ]),
     ]),
+    fader,
   ],
 })
 export class AppComponent {
   loadingScreen = true;
+
+  prepareRoute(outlet: RouterOutlet) {
+    return (
+      outlet &&
+      outlet.activatedRouteData &&
+      outlet.activatedRouteData['animation']
+    );
+  }
 }

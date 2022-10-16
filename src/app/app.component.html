@@ -3,4 +3,6 @@
   *ngIf="loadingScreen"
   @loading
 ></app-first-load>
-<router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
