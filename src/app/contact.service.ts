@@ -19,12 +19,16 @@ export class ContactService {
 
   sendContactForm(formData: any) {
     const { name, email, subject, message } = formData;
-    return this.http.post<any>(this.baseUrl, {
-      name,
-      from: email,
-      to: 'gab.boucher91@gmail.com',
-      subject,
-      text: message,
-    });
+    return this.http.post(
+      this.baseUrl,
+      {
+        name,
+        from: email,
+        to: 'gab.boucher91@gmail.com',
+        subject,
+        text: message,
+      },
+      { responseType: 'text' }
+    );
   }
 }
