@@ -8,6 +8,7 @@ import { UsefulLinksComponent } from './useful-links/useful-links.component';
 import { WorkCardComponent } from './work-card/work-card.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { TechCardComponent } from './tech-card/tech-card.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TechCardComponent } from './tech-card/tech-card.component';
     WorkCardComponent,
     ProjectCardComponent,
     TechCardComponent,
+    ModalComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -28,6 +30,7 @@ import { TechCardComponent } from './tech-card/tech-card.component';
     WorkCardComponent,
     ProjectCardComponent,
     TechCardComponent,
+    ModalComponent,
   ],
 })
 export class SharedModule {}

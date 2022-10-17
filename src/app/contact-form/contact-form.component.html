@@ -1,0 +1,85 @@
+<button class="button" (click)="onShowForm()">Contact Me</button>
+<app-modal *ngIf="showForm" (close)="showForm = false">
+  <h1>Send me a message!</h1>
+  <form class="form" [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+    <div class="name-email">
+      <div class="input">
+        <div class="labels">
+          <label for="name">Name</label>
+          <p
+            class="danger"
+            *ngIf="
+              contactForm.get('name').invalid &&
+              (contactForm.get('name').dirty || contactForm.get('name').touched)
+            "
+          >
+            Name is required
+          </p>
+        </div>
+        <input id="name" formControlName="name" />
+      </div>
+      <div class="input">
+        <div class="labels">
+          <label for="email">Email</label>
+          <ng-container
+            *ngIf="
+              contactForm.get('email').invalid &&
+              (contactForm.get('email').dirty ||
+                contactForm.get('email').touched)
+            "
+          >
+            <p
+              class="danger"
+              *ngIf="contactForm.get('email').errors['required']"
+            >
+              Email address is required
+            </p>
+            <p class="danger" *ngIf="contactForm.get('email').errors['email']">
+              Please enter a valid email address
+            </p>
+          </ng-container>
+        </div>
+        <input id="email" type="email" formControlName="email" />
+      </div>
+    </div>
+    <div class="input">
+      <div class="labels">
+        <label for="subject">Subject</label>
+        <p
+          class="danger"
+          *ngIf="
+            contactForm.get('subject').invalid &&
+            (contactForm.get('subject').dirty ||
+              contactForm.get('subject').touched)
+          "
+        >
+          Subject is required
+        </p>
+      </div>
+      <input id="subject" type="text" formControlName="subject" />
+    </div>
+    <div class="input">
+      <div class="labels">
+        <label for="message">Message</label>
+        <p
+          class="danger"
+          *ngIf="
+            contactForm.get('message').invalid &&
+            (contactForm.get('message').dirty ||
+              contactForm.get('message').touched)
+          "
+        >
+          Message cannot be empty
+        </p>
+      </div>
+      <textarea
+        name=""
+        id="message"
+        cols="30"
+        rows="10"
+        formControlName="message"
+      ></textarea>
+    </div>
+    <button class="send-button" [disabled]="contactForm.invalid">Send</button>
+  </form>
+</app-modal>
