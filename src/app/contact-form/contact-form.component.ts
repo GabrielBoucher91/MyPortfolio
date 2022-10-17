@@ -26,9 +26,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   sendEmail() {
-    this.contact
-      .sendContactForm(this.contactForm.value)
-      .subscribe((resp) => console.log(resp));
+    this.contact.sendContactForm(this.contactForm.value).subscribe();
     this.resetForm();
     this.showForm = false;
   }
