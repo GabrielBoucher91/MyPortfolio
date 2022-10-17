@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from '../contact.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -16,7 +17,7 @@ export class ContactFormComponent implements OnInit {
     message: new FormControl('', [Validators.required]),
   });
 
-  constructor() {}
+  constructor(private contact: ContactService) {}
 
   ngOnInit(): void {}
 
@@ -25,7 +26,9 @@ export class ContactFormComponent implements OnInit {
   }
 
   sendEmail() {
-    console.log(this.contactForm.value);
+    this.contact
+      .sendContactForm(this.contactForm.value)
+      .subscribe((resp) => console.log(resp));
     this.resetForm();
     this.showForm = false;
   }
