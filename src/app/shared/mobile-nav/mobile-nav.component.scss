@@ -1,0 +1,19 @@
+.nav-button {
+  background-color: var(--bg-dark);
+  display: none;
+}
+
+.nav-panel {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-dark);
+}
+
+@media (max-width: 900px) {
+  .nav-button {
+    display: block;
+  }
+}
