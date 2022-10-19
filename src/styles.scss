@@ -214,18 +214,11 @@ table {
   margin-bottom: 0.4em;
 }
 
-@media (min-width: 401px) and (max-width: 900px) {
-  body {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   body {
     width: 100vw;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
-
   .main-content {
     padding: 3em 1em;
   }
