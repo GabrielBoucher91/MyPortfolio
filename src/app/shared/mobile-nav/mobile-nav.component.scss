@@ -1,0 +1,42 @@
+.nav-button {
+  background-color: var(--bg-light);
+  border: none;
+  display: none;
+  width: fit-content;
+  img {
+    height: 3.2em;
+  }
+}
+
+.nav-panel {
+  position: absolute;
+  top: 5em;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+
+  a {
+    text-decoration: none;
+    color: var(--bg-light);
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-button {
+    display: block;
+  }
+}

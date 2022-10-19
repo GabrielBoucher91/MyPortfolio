@@ -116,6 +116,7 @@ nav,
 section {
   display: block;
 }
+html,
 body {
   line-height: 1;
   overflow-y: overlay;
@@ -166,6 +167,8 @@ table {
 // Shared Styles
 
 .main-content {
+  box-sizing: border-box;
+  width: 100%;
   padding: 3em 14%;
   position: relative;
   background: linear-gradient(var(--bg-dark) 0%, var(--text-dark) 100%);
@@ -211,8 +214,12 @@ table {
   margin-bottom: 0.4em;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   body {
+    width: 100vw;
     font-size: 0.8rem;
+  }
+  .main-content {
+    padding: 3em 1em;
   }
 }

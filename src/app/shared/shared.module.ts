@@ -9,6 +9,7 @@ import { WorkCardComponent } from './work-card/work-card.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { TechCardComponent } from './tech-card/tech-card.component';
 import { ModalComponent } from './modal/modal.component';
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ModalComponent } from './modal/modal.component';
     ProjectCardComponent,
     TechCardComponent,
     ModalComponent,
+    MobileNavComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [

@@ -1,0 +1,11 @@
+<button class="nav-button" (click)="togglePanel()">
+  <img src="assets/logos/links/menu.png" alt="" />
+</button>
+<div class="nav-panel" *ngIf="showPanel" @slide>
+  <div class="links">
+    <a routerLink="about" (click)="onClickLink('./')">About</a>
+    <a routerLink="research" (click)="onClickLink('research')">Research</a>
+    <a routerLink="projects" (click)="onClickLink('projects')">Projects</a>
+    <a routerLink="work" (click)="onClickLink('work')">Work Experience</a>
+  </div>
+</div>
