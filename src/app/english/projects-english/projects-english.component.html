@@ -2,6 +2,8 @@
   <h1 class="sectiontitle">Projects</h1>
   <div class="project-cards-holder">
     <app-project-card
+      class="slide-from-right"
+      [ngStyle]="{ 'animation-delay': calcDelay(1) }"
       [techs]="['Angular', 'Github', 'Firebase']"
       linkToDetail="portfolio"
       linkToSource="https://github.com/GabrielBoucher91/MyPortfolio"

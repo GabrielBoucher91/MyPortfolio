@@ -9,15 +9,24 @@
   <div class="tech-stack">
     <h3 class="tech-used">Tech Used</h3>
     <div class="tech-cards">
-      <app-tech-card name="Angular"
+      <app-tech-card
+        name="Angular"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(1) }"
         >This app uses Angular to build the front end. The styling is done with
         Sass without the use of a framework.
       </app-tech-card>
-      <app-tech-card name="Github"
+      <app-tech-card
+        name="Github"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(2) }"
         >This project's source code is hosted on Github. I also use Github
         Actions to automate the deployment when I merge to the master branch.
       </app-tech-card>
-      <app-tech-card name="Firebase"
+      <app-tech-card
+        name="Firebase"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(3) }"
         >This project is hosted on the Firebase platform. The deployment is
         automated via Github.
       </app-tech-card>

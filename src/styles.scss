@@ -193,6 +193,119 @@ table {
   align-self: flex-start;
 }
 
+.sectionsubtitle {
+  width: fit-content;
+  align-self: flex-start;
+  color: var(--bg-light);
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 3px solid var(--primary-blue);
+  margin-bottom: 0.4em;
+  animation: subtitle-fade 2s ease-out;
+  animation-fill-mode: both;
+}
+
+@media (max-width: 900px) {
+  body {
+    width: 100vw;
+    font-size: 0.8rem;
+  }
+  .main-content {
+    padding: 3em 1em;
+  }
+}
+
+// project-portfolio style
+.project-description {
+  color: var(--bg-light);
+  animation: subtitle-fade 2s ease-out;
+  animation-fill-mode: both;
+}
+
+.tech-stack {
+  margin-top: 1em;
+}
+
+.tech-used {
+  font-size: 1.4em;
+  color: var(--bg-light);
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid var(--primary-blue);
+  animation: subtitle-fade 2s ease-out;
+  animation-fill-mode: both;
+}
+
+.tech-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+//projects
+.project-cards-holder {
+  display: flex;
+  flex-direction: row;
+}
+
+//research
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.research-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hr {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.project-description {
+  font-size: 1.2em;
+  color: var(--bg-light);
+  margin-top: 1em;
+  margin-bottom: 2em;
+  animation: subtitle-fade 1s ease-out;
+}
+
+.useful-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.research-project-image {
+  display: inline-block;
+  object-fit: contain;
+  height: 13em;
+  border-radius: 1em;
+  margin-right: 2em;
+  transition: all 0.4s ease-out;
+}
+
+.research-project-image:hover {
+  height: 26em;
+}
+
+//animations
+
+.slide-from-right {
+  animation: slide-from-right 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.slide-from-left {
+  animation: slide-from-left 1s ease-out;
+  animation-fill-mode: both;
+}
+
 @keyframes titletop {
   from {
     transform: translateY(-100vh);
@@ -204,22 +317,29 @@ table {
   }
 }
 
-.sectionsubtitle {
-  width: fit-content;
-  align-self: flex-start;
-  color: var(--bg-light);
-  font-size: 2em;
-  font-weight: 600;
-  border-bottom: 3px solid var(--primary-blue);
-  margin-bottom: 0.4em;
+@keyframes subtitle-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media (max-width: 900px) {
-  body {
-    width: 100vw;
-    font-size: 0.8rem;
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100vw);
   }
-  .main-content {
-    padding: 3em 1em;
+  to {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0vh);
   }
 }
