@@ -15,8 +15,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  height: 15em;
+  width: fit-content;
+  height: fit-content;
+  padding: 4em 2em;
   background-color: var(--bg-dark);
   border-radius: 2em;
   animation-name: test;

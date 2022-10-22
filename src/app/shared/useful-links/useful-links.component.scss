@@ -1,7 +1,7 @@
 :host {
   font-size: 0.8em;
-  margin: 0em 2em 0em 0em;
-  width: 17em;
+  margin: 0em 0em 1em 0em;
+  width: 16em;
   height: 20em;
   transition: all 0.3s ease-out;
 }
@@ -59,4 +59,10 @@ a {
   font-size: 0.9em;
   color: var(--bg-light);
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  :host {
+    margin: 0em 0em 1em 0em;
+  }
 }
