@@ -297,7 +297,14 @@ table {
 .useful-links {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+}
+
+.useful-link {
+  margin: 0em 1em 1em 0em;
 }
 
 .research-project-image {
@@ -311,6 +318,31 @@ table {
 
 .research-project-image:hover {
   height: 26em;
+}
+
+@media (max-width: 900px) {
+  .research-images {
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .useful-links {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .useful-link {
+    margin: 0em 0em 1em 0em;
+  }
+
+  .research-project-image {
+    margin: 0em 0em 1em 0em;
+    width: 80%;
+    height: auto;
+  }
 }
 
 //animations
