@@ -215,7 +215,23 @@ table {
   }
 }
 
-// project-portfolio style
+//about
+.about-card {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+//project-portfolio style
 .project-description {
   color: var(--bg-light);
   animation: subtitle-fade 2s ease-out;
@@ -271,8 +287,11 @@ table {
   font-size: 1.2em;
   color: var(--bg-light);
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   animation: subtitle-fade 1s ease-out;
+  p {
+    margin-bottom: 1em;
+  }
 }
 
 .useful-links {

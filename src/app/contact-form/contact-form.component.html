@@ -1,6 +1,11 @@
 <button class="button" (click)="onShowForm()">Contact Me</button>
-<app-modal *ngIf="showForm" (close)="showForm = false">
-  <h1>Send me a message!</h1>
+<app-modal *ngIf="showForm" (close)="showForm = false" @slide>
+  <header>
+    <h1>Send me a message!</h1>
+    <button (click)="showForm = false">
+      <img src="assets/close.png" alt="" />
+    </button>
+  </header>
   <form class="form" [formGroup]="contactForm" (ngSubmit)="sendEmail()">
     <div class="name-email">
       <div class="input">
