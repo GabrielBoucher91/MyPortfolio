@@ -14,6 +14,8 @@ a {
   overflow: hidden;
   box-shadow: 0px 5px 15px 0px var(--bg-light);
   transition: transform 0.3s ease-out;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 .card:hover {
@@ -83,6 +85,7 @@ h1 {
   .card {
     width: 90vw;
     height: 30em;
+    margin-right: 0em;
   }
 }
 

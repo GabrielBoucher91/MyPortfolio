@@ -7,10 +7,24 @@
       [techs]="['Angular', 'Github', 'Firebase']"
       linkToDetail="portfolio"
       linkToSource="https://github.com/GabrielBoucher91/MyPortfolio"
+      image="assets/projects-thumbnails/WebsiteThumbnail.png"
     >
       <div title>Portfolio Website</div>
       <div content>
         This project is my portfolio website which you are currently viewing.
+      </div>
+    </app-project-card>
+    <app-project-card
+      class="slide-from-right"
+      [ngStyle]="{ 'animation-delay': calcDelay(2) }"
+      [techs]="['Python', 'Tensorflow', 'Opencv']"
+      linkToDetail="number"
+      linkToSource="https://github.com/GabrielBoucher91/number_finder"
+    >
+      <div title>Number Finder</div>
+      <div content>
+        This project is a simple application to detect written numbers on a
+        paper. It was created to practice machine learning and Python.
       </div>
     </app-project-card>
 
