@@ -3,13 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-project-number',
   templateUrl: './project-number.component.html',
-  styleUrls: ['./project-number.component.scss']
+  styleUrls: ['./project-number.component.scss'],
 })
 export class ProjectNumberComponent implements OnInit {
+  baseAnimDelay = 0.2;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  calcDelay(n: number) {
+    return `${n * this.baseAnimDelay}s`;
   }
-
 }
