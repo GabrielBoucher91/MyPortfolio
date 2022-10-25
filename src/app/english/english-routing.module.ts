@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutEnglishComponent } from './about-english/about-english.component';
 import { EnglishHomeComponent } from './english-home/english-home.component';
+import { ProjectNumberComponent } from './project-number/project-number.component';
 import { ProjectPortfolioComponent } from './project-portfolio/project-portfolio.component';
 import { ProjectsEnglishComponent } from './projects-english/projects-english.component';
 import { ResearchEnglishComponent } from './research-english/research-english.component';
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'projects/portfolio',
         component: ProjectPortfolioComponent,
+      },
+      {
+        path: 'projects/number',
+        component: ProjectNumberComponent,
       },
       {
         path: 'research',

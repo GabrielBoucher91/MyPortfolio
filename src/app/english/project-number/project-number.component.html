@@ -1,0 +1,112 @@
+<main class="main-content">
+  <h1 class="sectiontitle">Number Finder</h1>
+  <h2 class="sectionsubtitle">Description</h2>
+  <section class="project-description">
+    <p>
+      This project is a little Python application where the user takes a
+      picture, chose a section of the picture to analyse, processes it with
+      OpenCV and find the numbers present using a convolutional neural network
+      created using TensorFlow and trained on the MNIST dataset.
+    </p>
+  </section>
+  <h2 class="sectionsubtitle">Motivation</h2>
+  <section class="project-description">
+    <p>
+      This project was mostly created with the goal of learning. MNIST is
+      everybody's first dataset when learning about machine learning with
+      images. It is great to teach about standard ML methods, general neural
+      network as well as CNN. It is also great to learn about data augmentation
+      and the different techniques.
+    </p>
+    <p>
+      For instance, you can augment data by moving it around, rotating it, or
+      even mirroring it. In the context of numbers however, you have to be
+      careful since a mirrored number doesn't make sense and that some numbers
+      when rotated 180 degrees can completely change.
+    </p>
+    <p>
+      I also wanted to try an apply ML to an actual application. Making just a
+      good classifier is one part of the problem but integrating it to an
+      application is different. Here I use OpenCV to pre-process the image so I
+      can use my CNN to clasify the numbers.
+    </p>
+  </section>
+  <h2 class="sectionsubtitle">How it works</h2>
+  <section class="project-description">
+    <p>
+      When first opening the app, the user is greeted with the main window. Make
+      sure to plug in the webcam before starting the app. Also, if only one
+      webcam is connected to the computer (including a laptop webcam), you might
+      have to go change the value of the webcam index in the python file
+      (self.videoCam = cv2.VideoCapture(1)).
+    </p>
+    <img
+      src="assets/number-finder/nf-base.png"
+      alt="Image of the app after first launching it."
+      class="project-image slide-from-left"
+    />
+    <p>
+      To take a picture, click on the "Take Picture" button. You can press it as
+      many time as you want, it will simply overwrite the image.
+    </p>
+    <p>
+      Then click and drag on the picture to select the area around which the
+      numbers are.
+    </p>
+    <img
+      src="assets/number-finder/nf-select-area.png"
+      alt="Image of the app selecting the area"
+      class="project-image slide-from-left"
+    />
+    <p>
+      Then click on the "Process Image" to clean up the background and convert
+      the image to binary. After that click on the "Classify!" button to
+      classify the numbers. You can play with the number in the number box to
+      optimize the output.
+    </p>
+    <img
+      src="assets/number-finder/nf-last.png"
+      alt="Image of the final app"
+      class="project-image slide-from-left"
+    />
+  </section>
+  <h2 class="sectionsubtitle">Observation</h2>
+  <section class="project-description">
+    <p>
+      While this app works, it was mostly a project to tinker around with ML and
+      Python. It is far from optimized and some of the display and results may
+      vary a lot depending on the quality of the webcam and lighting. But it was
+      a very good and fun project to learn how to integrate ML into a project
+      and how to build UIs with Qt.
+    </p>
+  </section>
+  <div class="tech-stack">
+    <h3 class="tech-used">Tech Used</h3>
+    <div class="tech-cards">
+      <app-tech-card
+        name="Python"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(1) }"
+      >
+        This app is built in Python and the UI was created using PyQt5.
+      </app-tech-card>
+      <app-tech-card
+        name="OpenCV"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(2) }"
+      >
+        I used the Python version of OpenCV to do the segmentation part of the
+        process before doing the actual classification.
+      </app-tech-card>
+      <app-tech-card
+        name="TensorFlow"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(3) }"
+      >
+        I used TensorFlow and Keras to build and train the model. It is a very
+        basic CNN and I used a few data augmentation techniques to make it more
+        robust for real world applications.
+      </app-tech-card>
+    </div>
+  </div>
+</main>
