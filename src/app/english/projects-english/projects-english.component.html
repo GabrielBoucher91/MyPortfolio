@@ -14,6 +14,7 @@
         This project is my portfolio website which you are currently viewing.
       </div>
     </app-project-card>
+
     <app-project-card
       class="slide-from-right"
       [ngStyle]="{ 'animation-delay': calcDelay(2) }"
@@ -26,6 +27,21 @@
       <div content>
         This project is a simple application to detect written numbers on a
         paper. It was created to practice machine learning and Python.
+      </div>
+    </app-project-card>
+
+    <app-project-card
+      class="slide-from-right"
+      [ngStyle]="{ 'animation-delay': calcDelay(3) }"
+      [techs]="['React', 'Flask', 'Python']"
+      linkToDetail="mecadashboard"
+      linkToSource="https://github.com/GabrielBoucher91/Mecadashboard"
+      image="assets/projects-thumbnails/NumberFinderThumbnail.png"
+    >
+      <div title>Mecadashboard</div>
+      <div content>
+        This is a work side-project to monitor the status of multiple robots
+        Meca500. It uses React for the front-end and Flask for the backend.
       </div>
     </app-project-card>
 

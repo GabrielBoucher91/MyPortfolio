@@ -265,8 +265,14 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .tech-cards {
+    justify-content: space-between;
+  }
 }
 
 //projects

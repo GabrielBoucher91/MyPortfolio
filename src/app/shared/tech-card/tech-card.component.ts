@@ -14,6 +14,8 @@ export class TechCardComponent implements OnInit {
     Python: 'assets/logos/skills/python-logo-only.png',
     TensorFlow: 'assets/logos/skills/TF_FullColor_Icon.png',
     OpenCV: 'assets/logos/skills/OpenCV_logo.png',
+    React: 'assets/logos/skills/React-Logo.svg',
+    Flask: 'assets/logos/skills/Logo-Flask.png',
   };
 
   constructor() {}
