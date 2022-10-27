@@ -1,1 +1,75 @@
-<p>project-mecadashboard works!</p>
+<main class="main-content">
+  <h1 class="sectiontitle">Mecadashboard</h1>
+  <h2 class="sectionsubtitle">Project Description</h2>
+  <section class="project-description">
+    <p>
+      This project is a monitoring dashboard for the Meca500 robot from
+      <a href="https://www.mecademic.com" target="_blank" class="text-link">
+        Mecademic</a
+      >. It uses their Python driver with Flask to communicate with the robots
+      and the front-end is built with React. You can add robots to the list and
+      you can then monitor the status of these robots. This can be useful in a
+      situation where there are many robots on the same network and they have to
+      be monitored.
+    </p>
+  </section>
+  <h2 class="sectionsubtitle">Motivation</h2>
+  <section class="project-description">
+    <p>
+      This project was created in part to practice React, but also to show our
+      customers that you can build a web app to interact with mutiple robots.
+      This can also be a good tool to monitor a lot of robots during trade shows
+      and quickly see if all the demos are running properly.
+    </p>
+    <p>
+      I also built this to better understand how to create a micro-service using
+      Flask. I have started another project to expand the backend to support
+      more commands for a robot.
+    </p>
+  </section>
+  <h2 class="sectionsubtitle">How it works</h2>
+  <section class="project-description">
+    <p>
+      Once the backend server is booted and the React app is running, you can
+      connect using your web browser. You get to the main page of the
+      application where there's a link to the documentation and one to the
+      support.
+    </p>
+    <p>
+      Then you can click on the + button to add a robot to the list. Enter the
+      IP address of the robot and give it a name. If the robot is available, the
+      backend will make a connection but if not an error is returned.
+    </p>
+    <p>
+      You can add many robots as long as you can connect to them. If you try to
+      add a robot that is already on the list, an error will be shown. Note that
+      this app only works if you have robots available.
+    </p>
+  </section>
+  <div class="tech-stack">
+    <h3 class="tech-used">Tech Used</h3>
+    <div class="tech-cards">
+      <app-tech-card
+        name="React"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(1) }"
+      >
+        The frontend was built using React.
+      </app-tech-card>
+      <app-tech-card
+        name="Flask"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(2) }"
+      >
+        Flask is used to manage the HTTP request on the server side.
+      </app-tech-card>
+      <app-tech-card
+        name="Python"
+        class="slide-from-right"
+        [ngStyle]="{ 'animation-delay': calcDelay(3) }"
+      >
+        Python is used for the communication with the actual robots.
+      </app-tech-card>
+    </div>
+  </div>
+</main>

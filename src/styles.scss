@@ -210,6 +210,14 @@ table {
   margin-bottom: 1em;
 }
 
+.text-link {
+  color: var(--primary-blue);
+  transition: all 0.3s ease-out;
+}
+.text-link:hover {
+  color: var(--primary-purple);
+}
+
 @media (max-width: 900px) {
   body {
     width: 100vw;
