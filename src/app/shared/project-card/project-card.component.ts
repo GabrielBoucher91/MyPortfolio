@@ -17,6 +17,8 @@ export class ProjectCardComponent implements OnInit {
     Python: 'assets/logos/skills/python-logo-only.png',
     Tensorflow: 'assets/logos/skills/TF_FullColor_Icon.png',
     Opencv: 'assets/logos/skills/OpenCV_logo.png',
+    React: 'assets/logos/skills/React_Logo.svg',
+    Flask: 'assets/logos/skills/Logo_Flask.png',
   };
 
   constructor() {}
