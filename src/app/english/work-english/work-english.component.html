@@ -4,10 +4,28 @@
     <h2 class="sectionsubtitle">Industry Experience</h2>
     <div class="work-cards">
       <app-work-card
+        title="Senior Robotics Specialist"
+        company="Mecadmic Industrial Robotics"
+        startDate="Jan 2023"
+        endDate="Present"
+        class="slide-from-left"
+        [ngStyle]="{ 'animation-delay': calcDelay(1) }"
+        [skills]="[
+          'Python',
+          'Advanced Robotics',
+          'Technical Writing',
+          'Project Management'
+        ]"
+      >
+        As a senior robotics specialist, my job is to be reference, both inside the company and for our customers.
+        I worked on the more advanced projects for customers and I also worked on internal development projects like the 
+        robot calibration project. I also kept most of my responsabilities from the application specialist role.
+      </app-work-card>
+      <app-work-card
         title="Application Specialist"
         company="Mecadmic Industrial Robotics"
         startDate="Jun 2021"
-        endDate="Present"
+        endDate="Jan 2023"
         class="slide-from-left"
         [ngStyle]="{ 'animation-delay': calcDelay(1) }"
         [skills]="[
